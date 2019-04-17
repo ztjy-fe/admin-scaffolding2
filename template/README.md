@@ -1,4 +1,4 @@
-# vue_cli_3.0
+# 基于vue-cli3.0的后台项目模板
 
 ## Project setup
 ```
