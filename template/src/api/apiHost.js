@@ -9,13 +9,13 @@ case 'dev':
 	BASE_API = 'http://dev-api.szy.net'
 	break
 case 'alpha':
-	BASE_API = 'http://alpha-api.szy.com'
+	BASE_API = 'https://alpha-api.szy.cn'
 	break
 case 'rc':
-	BASE_API = 'http://rc-api.szy.cn'
+	BASE_API = 'https://rc-api.szy.cn'
 	break
 default:
-	BASE_API = 'http://api.szy.cn'
+	BASE_API = 'https://api.szy.cn'
 	break
 }
 const path = path => BASE_API + path
