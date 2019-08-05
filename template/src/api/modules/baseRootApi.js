@@ -7,7 +7,7 @@ export const BASEROOT = {
 }
 
 export default {
-    async getCityList (params, callback) {
+	async getCityList (params, callback) {
 		return await API.post(BASEROOT.CITY, params, callback)
-    }
+	}
 }

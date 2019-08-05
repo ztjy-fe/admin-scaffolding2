@@ -3,7 +3,6 @@ import { Message, MessageBox } from 'element-ui'
 import store from '../store'
 import { SYSTEM } from '@/api/modules/userApi'
 import router from '@/router/index'
-const qs = require('qs')
 
 const Ajax = Axios.create({
 	timeout: 6000
@@ -11,10 +10,6 @@ const Ajax = Axios.create({
 Ajax.defaults.headers.post['Content-Type'] = 'application/json'
 // request拦截器
 Ajax.interceptors.request.use(config => {
-	// post数据序列化
-	// if (config.method === 'post') {
-	// 	config.data = qs.stringify(config.data)
-	// }
 	const userToken = store.state.User.token
 	if (userToken) {
 		// 让每个请求携带自定义token 请根据实际情况自行修改
