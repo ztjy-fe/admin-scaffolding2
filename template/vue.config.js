@@ -1,6 +1,6 @@
 // webpack配置
 module.exports = {
-	publicPath: 'ztjy-recruit',
+	publicPath: '/',
 	assetsDir: 'static', // 打包后静态资源路径
 	productionSourceMap: false,
 	devServer: {

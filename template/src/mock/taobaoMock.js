@@ -1,9 +1,9 @@
 import Mock from 'mockjs'
-import { USER_API_URL } from '@/api/modules/user'
+import { TAOBAO } from '@/api/modules/taobaoApi'
 
 export default {
-	loginMock () {
-		Mock.mock(USER_API_URL.LOGIN, {
+	listMock () {
+		Mock.mock(TAOBAO.LIST, {
 			code: 10000,
 			messase: 'ok',
 			body: {}
